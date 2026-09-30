@@ -1,0 +1,75 @@
+/* @import url() FONT IMPORTS MUST ALWAYS BE AT THE VERY TOP OF THIS FILE, ABOVE THE TAILWIND IMPORTS — DO NOT DELETE THIS COMMENT */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Archivo:wght@500;600;700;800&family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;500;600;700;800&family=DM+Serif+Display:ital@0;1&display=swap');
+
+/* CRITICAL: THE FOLLOWING TAILWIND IMPORTS MUST NEVER BE DELETED OR REORDERED — DO NOT DELETE THIS COMMENT */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* END TAILWIND IMPORTS — ALL OTHER CSS MUST GO BELOW THIS LINE */
+
+html,
+body,
+#root {
+  height: 100%;
+}
+body {
+  font-family: 'Manrope', ui-sans-serif, system-ui, sans-serif;
+  background: #faf7f2;
+  color: #1b1714;
+  -webkit-font-smoothing: antialiased;
+}
+.num {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+}
+.tnum {
+  font-variant-numeric: tabular-nums;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.thin-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.thin-scrollbar::-webkit-scrollbar-thumb {
+  background: #e8e1d6;
+  border-radius: 999px;
+}
+/* Executive deck typography: DM Serif Display for display, DM Sans for text and UI mockups. */
+.deck,
+.deck .font-sans {
+  font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+}
+.deck .font-display,
+.deck .font-serif {
+  font-family: 'DM Serif Display', Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+.deck .deck-ui .font-display {
+  font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  font-weight: 700;
+}
+.deck-kicker {
+  font-family: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  font-size: 1.25vw;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.21vw;
+  text-transform: uppercase;
+  color: #d9531e;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
